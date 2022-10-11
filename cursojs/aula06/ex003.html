@@ -10,9 +10,13 @@
 <body style="background-color: #716e6e;">
     <h1>Olá, mundo!</h1>
     <script>
-        alert('My first message');
-        confirm('Do you stay like JavaScript?')
-        prompt('Qual o seu nome?') //Pergunta o nome...
+        var num1 = Number(prompt('Digite um número: ')) //string
+        var num2 = Number(prompt('Digite outro número: ')) //string
+
+        var s = num1 + num2
+        alert(`A soma entre ${num1} + ${num2} é igual a ${s}`)
+        //(number + number) para adição
+        //+ para concatenação
     </script>
 </body>
 </html>
