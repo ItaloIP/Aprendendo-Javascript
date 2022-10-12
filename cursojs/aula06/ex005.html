@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendendo DOM</title>
+    <style>
+        body{
+            background-color: rgb(0, 161, 254);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Iniciando DOM</h1>
+    <p>Aqui vai o resultado</p>       <!--[0]-->
+    <p>Aprendendo a usar o <strong>DOM</strong> no JavaScript</p> <!--[1]-->
+    <div class='msg'>Clique em MIM</div>
+
+    <script>
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[1]
+        /*
+        p1.style.color = 'blue'
+        corpo.style.background = 'red'
+        var d = document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Italo Lindo'
+        */
+        var d = document.querySelector('div.msg')
+        d.style.color = ('red')
+    </script>
+
+</body>
+</html>
