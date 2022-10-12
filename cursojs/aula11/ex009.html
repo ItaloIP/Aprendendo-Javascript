@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where you live?</title>
+    <style>
+        body{
+            margin: 0, auto;
+            background-color: rgb(251, 210, 255);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }   
+    </style>
+</head>
+<body>
+    <h1>Which country do you live?</h1>
+
+    Country <input type="text" name="contry" id="country">
+
+    <br>
+    <input type="button" value="Finish" onclick="country()">
+    <div id="bandeira"></div>
+    <script>
+        function country(){
+            var country1 = document.getElementById('country').value
+            if (country1 == 'Brasil'){
+                var img = document.createAttribute('style','brasil.jpg')
+                var div = document.getElementById('bandeira')
+                div.innerText = 'Brasileiro!'
+            }
+            else{
+                var div = document.getElementById('bandeira')
+                div.innerText = 'Estrangeiro!'
+            }
+        }
+    </script>
+</body>
+</html>
