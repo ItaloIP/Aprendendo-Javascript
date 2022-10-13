@@ -1,0 +1,36 @@
+body{
+    color: rgb(255, 255, 255);
+    background-color: rgb(3, 137, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+}
+header{
+    align-items: center;
+    text-align: center;
+}
+
+section{
+    margin: auto;
+    background-color: aliceblue;
+    width: 450px;
+
+    border-radius: 10px;
+    box-shadow: 3px 3px 9px black;
+    color: black;
+}
+
+footer{
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+#text{
+    text-align: center;
+    align-items: center;
+}
+#resul{
+    text-align: center;
+    align-items: center;
+    margin-left: 10%;
+}
