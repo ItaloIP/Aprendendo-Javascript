@@ -1,0 +1,28 @@
+#corpo{
+    margin-top: 35px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(135, 151, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}   
+
+section{
+    width: 380px;
+    /* height: 260px; */
+    background-color: rgba(245, 245, 245, 0.804);
+    margin: auto;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.315);
+ 
+    border-radius: 4px;
+    color: black;
+}
+
+#imagem{
+    padding: 10px;
+}
+
+
+footer{
+    font: italic;
+}
