@@ -1,19 +1,20 @@
 function Contar(){
-    var a = Number(document.getElementById('a').value)
     var b = Number(document.getElementById('b').value)
+    var a = Number(document.getElementById('a').value)
     var c = Number(document.getElementById('c').value)
     var div = document.getElementById('resultado')
-
+    
+    
     if (a == 0|| b == 0)
     {
         div.innerHTML = 'Não foi possível realizar a contagem.'
     }
-
+    
     else if (c == 0)
     {
         alert('Pula será considerado 1.')
         div.innerText = ''
-        for (a ; a <= b  ; a++)
+        for (a ; a <= b  ; a += c)
         {
             while (a < b)
             { 
@@ -24,7 +25,7 @@ function Contar(){
     else
     {
         div.innerText = ''
-        for (a ; a <= b  ; a++)
+        for (a ; a <= b  ; a += c)
         {
             div.innerHTML += ` ${a}`
             if (a < b)
