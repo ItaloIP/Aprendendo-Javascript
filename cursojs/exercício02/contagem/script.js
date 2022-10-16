@@ -3,13 +3,34 @@ function Contar(){
     var b = Number(document.getElementById('b').value)
     var c = Number(document.getElementById('c').value)
     var div = document.getElementById('resultado')
-    if (c == 0){
-        alert('Pula será considerado 1.')
-        var c = 1
+
+    if (a == 0|| b == 0)
+    {
+        div.innerHTML = 'Não foi possível realizar a contagem.'
     }
 
-    for (a; a <=b ; a++){
-        div.innerText= `${a}`
-        // div.innerHTML = 
+    else if (c == 0)
+    {
+        alert('Pula será considerado 1.')
+        div.innerText = ''
+        for (a ; a <= b  ; a++)
+        {
+            while (a < b)
+            { 
+                div.innerHTML += ` ${a} ->`
+            }
+        }
+    }
+    else
+    {
+        div.innerText = ''
+        for (a ; a <= b  ; a++)
+        {
+            div.innerHTML += ` ${a}`
+            if (a < b)
+            {
+                div.innerHTML += ' ->'
+            }
+        }
     }
 }

@@ -27,7 +27,11 @@ section{
 
 input{
     border-radius: 6px;
-    width: 30px;
+    width: 50px;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #button{
