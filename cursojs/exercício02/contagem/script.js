@@ -1,37 +1,59 @@
 function Contar(){
-    var b = Number(document.getElementById('b').value)
-    var a = Number(document.getElementById('a').value)
-    var c = Number(document.getElementById('c').value)
+    var b = document.getElementById('b').value
+    var a = document.getElementById('a').value
+    var c = document.getElementById('c').value
     var div = document.getElementById('resultado')
     
     
-    if (a == 0|| b == 0)
+    if (a.length == 0 || b.length == 0)
     {
         div.innerHTML = 'Não foi possível realizar a contagem.'
     }
     
-    else if (c == 0)
+    if (Number(c) == 0 || Number(c) < 0)
     {
-        alert('Pula será considerado 1.')
-        div.innerText = ''
-        for (a ; a <= b  ; a += c)
-        {
-            while (a < b)
-            { 
-                div.innerHTML += ` ${a} ->`
-            }
-        }
+        alert('O pulo será considerado 1')
+        Number(a)
+        Number(b)
+        var c = 1
     }
-    else
+
+    else{
+        Number(a)
+        Number(b)
+        Number(c)
+    }
+
+    if (a < b)
     {
+        var a = Number(a)
+        var b = Number(b)
+        var c = Number(c)
         div.innerText = ''
         for (a ; a <= b  ; a += c)
         {
+            console.log('aa')
             div.innerHTML += ` ${a}`
             if (a < b)
             {
-                div.innerHTML += ' ->'
+                div.innerHTML += '👉'
             }
         }
     }
+    else{
+        var a = Number(a)
+        var b = Number(b)
+        var c = Number(c)
+        div.innerText = ''
+        for (a ; a >= b; a -= c)
+        {
+            console.log('b')
+            div.innerHTML += ` ${a}`
+            if (a > b)
+            {
+                div.innerHTML += '👉'
+            }
+        }
+    }
+    div.innerText += '🏁'
 }
