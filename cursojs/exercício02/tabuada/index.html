@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mega contador</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body id="corpo">
     <header><h1>Tabuada</h1></header>
     <br>
     <section>
-
         <div id="text">
-            Começo: <input type="number" name="" id="a"> <br>
-            <input id="button" type="button" value="Contar" onclick="Contar()">
-
+            Número <input type="number" name="" id="num"> 
+            <input id="button" type="button"  value="Gerar" onclick="Tabuada()">
         </div>
-        <p id="resultado">
-            Esperando resultado....
-        </p>
-        <input type="text" readonly name="" id="">
+        <select name="" id="resul" size="10"></select>
+    
     </section>
     <br>
     <footer>&copy ItaloIP</footer>

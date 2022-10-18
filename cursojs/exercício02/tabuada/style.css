@@ -11,6 +11,7 @@ header,footer{
 }
 
 section{
+    padding: 15px;
     width: 380px;
     background-color: rgba(245, 245, 245, 0.804);
     margin: auto;
@@ -19,16 +20,13 @@ section{
     color: black;
 }
 
-#text{
-    /* margin-left: 15px; */
-    padding: 15px;
-
-}
 
 /* input{
     border-radius: 6px;
-    width: 50px;
-} */
+    
+}
+ */
+
 
 p{
     font-family: Arial, Helvetica, sans-serif;
@@ -38,7 +36,9 @@ p{
     width: 60px;
 }
 
-#resultado{
-    display: inline;
-    padding: 10px;
-}
+/* #resultado{
+    width: 100px;
+    height: auto;
+    margin: auto;
+
+} */
