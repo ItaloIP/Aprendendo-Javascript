@@ -11,7 +11,6 @@ function Tabuada(){
             let item = document.createElement('option')
             item.innerText = `${num} x ${c} = ${num*c}`
             item.value = `resul${c}`
-            resul.appendChild(item)
-        }
+            resul.appendChild(item)}
     }
 }
