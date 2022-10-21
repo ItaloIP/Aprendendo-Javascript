@@ -26,6 +26,10 @@ section{
     
 }
 
+select{
+    width: 160px;
+}
+
 p{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -34,9 +38,3 @@ p{
     width: 60px;
 }
 
-/* #resultado{
-    width: 100px;
-    height: auto;
-    margin: auto;
-
-} */
