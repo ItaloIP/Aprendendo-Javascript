@@ -1,14 +1,23 @@
 function TempConverter(txt){
-    let text = txt.toUpperCase
-    let num = 0
+    let num = ''
     let temp = ''
     for (let letra of txt){
-        if (letra == Number){
+        if (isFinite(letra)){
             num += letra
+        }else{
+            temp += letra
         }
     }
-    console.log(letra)
+    if (temp == 'F' || temp == 'f'){
+        return `${(num - 32) * 5/9}C°`
+    }else if (temp == 'C' || temp == 'c'){
+        return `${num * 9/5 + 32}F°`
+    }
+    else{
+        return console.log('Houve um erro!')
+    }
 }
 
-console.log(TempConverter('45f'))
-console.log('opa')
+console.log(TempConverter('32f'))
+
+console.log(TempConverter('32d'))
