@@ -4,9 +4,11 @@ function TempConverter(txt){
     let temp = ''
     for (let letra of txt){
         if (letra == Number){
-            let += letra
+            num += letra
         }
     }
+    console.log(letra)
 }
 
 console.log(TempConverter('45f'))
+console.log('opa')
