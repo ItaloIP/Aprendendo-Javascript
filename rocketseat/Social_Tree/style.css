@@ -1,0 +1,56 @@
+body{
+    margin: 50px auto;
+    color: #BB99DD;
+    background-color: #FAF7FD;
+}
+
+
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    zoom: 130%;
+}
+
+
+.photo{
+    border: solid 2px ;
+    border-radius: 100%;
+    padding: 5px;
+    height: 201px;
+}
+
+/* .group{
+    margin-bottom: px;
+} */
+
+.link{
+    border: #BB99DD 2px solid;
+    width: 12rem;
+    border-radius: 3%;
+    padding: 3px;
+    margin-bottom: 10px;
+    
+}
+
+a{
+    color: #BB99DD;
+    text-decoration: none;
+}
+
+.container{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+ul{
+    display: flex;
+    list-style: none;
+
+}
+
+li{
+    padding-right: 24px;
+}
